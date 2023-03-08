@@ -10,7 +10,7 @@ import lombok.ToString;
 @ToString
 @Builder
 
-public class Author {
+public class AuthorModel {
     private String name;
     private String email;
     private String password;

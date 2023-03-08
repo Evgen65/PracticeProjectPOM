@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class StartPage extends BasePage {
 
-
     public StartPage(WebDriver driver) {
         super(driver);
     }
@@ -20,7 +19,18 @@ public class StartPage extends BasePage {
     WebElement buttonIFoundPet;
 
     @FindBy(xpath ="//span[.='join']")
-    WebElement ButtonJoin;
+    WebElement buttonJoin;
+
+    public SignUpSignInPage openSingUpSingInPageFirstWay() {
+        buttonSinIn.click();
+        return new SignUpSignInPage(driver);
+    }
+
+
+    public SignUpSignInPage openSingUpSingInPageSecondWay() {
+      buttonJoin.click();
+      return  new SignUpSignInPage(driver);
+    }
 
 
 }
