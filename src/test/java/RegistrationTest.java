@@ -95,6 +95,5 @@ public class RegistrationTest extends TestBase {
                 . isErrorMessageTest("Email not valid");
         new SignUpSignInPage(driver)
                 .clickCancel();
-
     }
 }
