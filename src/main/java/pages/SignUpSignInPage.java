@@ -4,8 +4,6 @@ import models.AuthorModel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SignUpSignInPage extends BasePage {
 
@@ -72,17 +70,10 @@ public class SignUpSignInPage extends BasePage {
         return this;
     }
 
-//    public boolean isErrorMessage() {
-//        Boolean message = new WebDriverWait(driver, 0, 5).until(ExpectedConditions.textToBePresentInElement
-//                (errorMessage, "User with this email already exists"));
-//        return true;
-//    }
-
     public boolean isUnlogged() {
         buttonSubmit.isDisplayed();
         return true;
     }
-
 
     public boolean isErrorMessageTest(String message) {
         //  should(errorMessage, 5);

@@ -11,7 +11,7 @@ public class LoginTest extends TestBase {
                 .clickButtonSignIn()
                 .fillLoginForm(AuthorModel.builder()
                         .email("abcd@mail.com")
-                        .password("Abcd1234S")
+                        .password("Abcd1234$")
                         .build())
                 .clickButtonSubmit()
                 .isLoginImplemented());
