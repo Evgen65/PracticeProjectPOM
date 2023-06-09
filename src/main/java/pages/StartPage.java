@@ -9,7 +9,7 @@ public class StartPage extends BasePage {
     public StartPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "//div[text()='Sign in']")
+    @FindBy(xpath = "S")
     WebElement buttonSinIn;
 
     @FindBy(xpath ="//div[text()='Sign in']")
